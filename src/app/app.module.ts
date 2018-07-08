@@ -11,6 +11,7 @@ import {ContactDetailComponent} from './contact-detail/contact-detail.component'
 import {ContactListComponent} from './contact-list/contact-list.component';
 import { SettingsComponent } from './settings/settings.component';
 import {AngularFontAwesomeModule} from 'angular-font-awesome';
+import { MandatorComponent } from './mandator/mandator.component';
 
 @NgModule({
   imports: [BrowserModule,
@@ -20,7 +21,7 @@ import {AngularFontAwesomeModule} from 'angular-font-awesome';
     RouterModule.forRoot(AppRoutes)
   ],
   exports: [],
-  declarations: [AppComponent, ContactListComponent, ContactDetailComponent, SettingsComponent],
+  declarations: [AppComponent, ContactListComponent, ContactDetailComponent, SettingsComponent, MandatorComponent],
   bootstrap: [AppComponent],
   providers: [
     ContactService,

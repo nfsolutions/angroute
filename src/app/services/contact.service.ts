@@ -28,4 +28,13 @@ export class ContactService {
       }, 2000);
     });
   }
+
+  saveMandator(name: string) {
+    return Observable.create(observer => {
+      setTimeout(() => {
+        observer.next(contacts.find((contact) => contact.id == id));
+        observer.complete();
+      }, 2000);
+    });
+  }
 }

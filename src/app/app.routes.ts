@@ -4,6 +4,7 @@ import {ContactListResolve} from './resolvers/contact-list.resolve';
 import {ContactListComponent} from './contact-list/contact-list.component';
 import {ContactDetailComponent} from './contact-detail/contact-detail.component';
 import {SettingsComponent} from './settings/settings.component';
+import {MandatorComponent} from './mandator/mandator.component';
 
 export const AppRoutes: Routes = [
   {
@@ -23,6 +24,10 @@ export const AppRoutes: Routes = [
   {
     path: 'settings',
     component: SettingsComponent,
+  },
+  {
+    path: 'mandator',
+    component: MandatorComponent,
   }
 ];
 
