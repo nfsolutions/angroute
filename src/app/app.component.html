@@ -9,6 +9,11 @@
     a provider token,
     as well as the resolver configuration on the routes. Also, note how the navigation is delayed by 3 seconds.</p>
   <hr>
-  <br>
+<div [hidden]="!loading" class="loader">
+  <h2>Loading...</h2>
+  <div class="square"></div>
+</div>
+<div [hidden]="loading" class="router-output">
   <router-outlet></router-outlet>
-  <hr>
+</div>
+

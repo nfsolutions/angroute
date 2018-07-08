@@ -14,7 +14,10 @@ export class ContactsService {
 
   getContacts() {
     return Observable.create(observer => {
-      observer.next(contacts);
+      setTimeout(() => {
+        observer.next(contacts);
+        observer.complete();
+      }, 3000);
     });
   }
 
