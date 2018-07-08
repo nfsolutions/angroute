@@ -1,14 +1,14 @@
 import {Injectable} from '@angular/core';
 import {Resolve, ActivatedRouteSnapshot} from '@angular/router';
-import {ContactsService} from './contacts.service';
+import {ContactService} from '../services/contact.service';
 
 @Injectable()
 export class ContactListResolve implements Resolve<any> {
 
-  constructor(private contactsService: ContactsService) {
+  constructor(private contactService: ContactService) {
   }
 
   resolve(route: ActivatedRouteSnapshot) {
-    return this.contactsService.getContacts();
+    return this.contactService.getContacts();
   }
 }

@@ -1,9 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import {ContactsService} from './contacts.service';
 import {ActivatedRoute} from '@angular/router';
 
 @Component({
-  selector: 'contacts-list',
+  selector: 'app-contact-list',
   template: `
     <ul>
       <li *ngFor="let contact of contacts">
@@ -12,11 +11,11 @@ import {ActivatedRoute} from '@angular/router';
     </ul>
   `
 })
-export class ContactsListComponent implements OnInit {
+export class ContactListComponent implements OnInit {
 
   contacts: any[];
 
-  constructor(private route: ActivatedRoute, private contactsService: ContactsService) {
+  constructor(private route: ActivatedRoute) {
   }
 
   ngOnInit() {

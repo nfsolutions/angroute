@@ -1,9 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import {ContactsService} from './contacts.service';
 
 @Component({
-  selector: 'contacts-detail',
+  selector: 'app-contact-detail',
   template: `
     <h2>{{contact.name}}</h2>
 
@@ -15,7 +14,7 @@ import {ContactsService} from './contacts.service';
     <p><a routerLink="/">Back to list</a></p>
   `
 })
-export class ContactsDetailComponent implements OnInit {
+export class ContactDetailComponent implements OnInit {
 
   contact;
 

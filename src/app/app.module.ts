@@ -3,12 +3,12 @@ import {BrowserModule} from '@angular/platform-browser';
 import {RouterModule} from '@angular/router';
 import {AppComponent} from './app.component';
 import {AppRoutes} from './app.routes';
-import {ContactResolve} from './contact.resolve';
-import {ContactsService} from './contacts.service';
-import {ContactsListComponent} from './contacts-list.component';
-import {ContactsDetailComponent} from './contacts-detail.component';
+import {ContactResolve} from './resolvers/contact.resolve';
+import {ContactService} from './services/contact.service';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {ContactListResolve} from './contact-list.resolve';
+import {ContactListResolve} from './resolvers/contact-list.resolve';
+import {ContactDetailComponent} from './contact-detail/contact-detail.component';
+import {ContactListComponent} from './contact-list/contact-list.component';
 
 @NgModule({
   imports: [BrowserModule,
@@ -17,10 +17,10 @@ import {ContactListResolve} from './contact-list.resolve';
     RouterModule.forRoot(AppRoutes)
   ],
   exports: [],
-  declarations: [AppComponent, ContactsListComponent, ContactsDetailComponent],
+  declarations: [AppComponent, ContactListComponent, ContactDetailComponent],
   bootstrap: [AppComponent],
   providers: [
-    ContactsService,
+    ContactService,
     ContactResolve,
     ContactListResolve
   ]

@@ -1,20 +1,20 @@
 import {Routes} from '@angular/router';
-import {ContactsListComponent} from './contacts-list.component';
-import {ContactsDetailComponent} from './contacts-detail.component';
-import {ContactResolve} from './contact.resolve';
-import {ContactListResolve} from './contact-list.resolve';
+import {ContactResolve} from './resolvers/contact.resolve';
+import {ContactListResolve} from './resolvers/contact-list.resolve';
+import {ContactListComponent} from './contact-list/contact-list.component';
+import {ContactDetailComponent} from './contact-detail/contact-detail.component';
 
 export const AppRoutes: Routes = [
   {
     path: '',
-    component: ContactsListComponent,
+    component: ContactListComponent,
     resolve: {
       contacts: ContactListResolve
     }
   },
   {
     path: 'contact/:id',
-    component: ContactsDetailComponent,
+    component: ContactDetailComponent,
     resolve: {
       contact: ContactResolve
     }

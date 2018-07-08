@@ -9,7 +9,7 @@ const contacts = [
 ];
 
 @Injectable()
-export class ContactsService {
+export class ContactService {
 
   getContacts() {
     return Observable.create(observer => {
