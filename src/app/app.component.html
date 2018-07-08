@@ -8,8 +8,8 @@
     a provider token,
     as well as the resolver configuration on the routes. Also, note how the navigation is delayed by 3 seconds.</p>
   <hr>
-<div *ngIf="loading" class="square">
-  <h2 style="background: red">Loading blub...</h2>
+<div *ngIf="loading">
+  <i class="fa fa-circle-o-notch fa-spin" style="font-size:30px"></i>
 </div>
 <div *ngIf="!loading" class="router-output">
   <router-outlet></router-outlet>

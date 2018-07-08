@@ -10,11 +10,13 @@ import {ContactListResolve} from './resolvers/contact-list.resolve';
 import {ContactDetailComponent} from './contact-detail/contact-detail.component';
 import {ContactListComponent} from './contact-list/contact-list.component';
 import { SettingsComponent } from './settings/settings.component';
+import {AngularFontAwesomeModule} from 'angular-font-awesome';
 
 @NgModule({
   imports: [BrowserModule,
     BrowserAnimationsModule,
     BrowserModule,
+    AngularFontAwesomeModule,
     RouterModule.forRoot(AppRoutes)
   ],
   exports: [],

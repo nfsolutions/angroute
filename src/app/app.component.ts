@@ -18,11 +18,13 @@ export class AppComponent implements AfterViewInit {
         if (event instanceof NavigationStart) {
           this.loading = true;
         }
-        else if (
+        else {
+          if (
           event instanceof NavigationEnd ||
           event instanceof NavigationCancel
         ) {
           this.loading = false;
+        }
         }
       });
   }
