@@ -1,5 +1,4 @@
 <h2>SEEB</h2>
-
 <div class="row">
   <div class="col-sm-4">Eingang Sendungne</div>
   <div class="col-sm-4">Archiv</div>
@@ -9,11 +8,10 @@
     a provider token,
     as well as the resolver configuration on the routes. Also, note how the navigation is delayed by 3 seconds.</p>
   <hr>
-<div [hidden]="!loading" class="loader">
-  <h2>Loading...</h2>
-  <div class="square"></div>
+<div *ngIf="loading" class="square">
+  <h2 style="background: red">Loading blub...</h2>
 </div>
-<div [hidden]="loading" class="router-output">
+<div *ngIf="!loading" class="router-output">
   <router-outlet></router-outlet>
 </div>
 
