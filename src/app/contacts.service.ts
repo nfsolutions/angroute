@@ -1,6 +1,5 @@
 import {Injectable} from '@angular/core';
-import {Observable} from 'rxjs/Observable';
-import * as Rx from 'rxjs';
+import {Observable} from 'rxjs';
 
 const contacts = [
   {id: 1, name: 'Pascal Precht', twitter: '@PascalPrecht'},

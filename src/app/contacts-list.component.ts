@@ -20,7 +20,6 @@ export class ContactsListComponent implements OnInit {
   }
 
   ngOnInit() {
-    // was this.contacts = this.contactsService.getContacts();
     this.contacts = this.route.snapshot.data['contacts'];
   }
 }
