@@ -3,6 +3,7 @@ import {ContactResolve} from './resolvers/contact.resolve';
 import {ContactListResolve} from './resolvers/contact-list.resolve';
 import {ContactListComponent} from './contact-list/contact-list.component';
 import {ContactDetailComponent} from './contact-detail/contact-detail.component';
+import {SettingsComponent} from './settings/settings.component';
 
 export const AppRoutes: Routes = [
   {
@@ -19,5 +20,9 @@ export const AppRoutes: Routes = [
       contact: ContactResolve
     }
   },
+  {
+    path: 'settings',
+    component: SettingsComponent,
+  }
 ];
 

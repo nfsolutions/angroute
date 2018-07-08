@@ -9,6 +9,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ContactListResolve} from './resolvers/contact-list.resolve';
 import {ContactDetailComponent} from './contact-detail/contact-detail.component';
 import {ContactListComponent} from './contact-list/contact-list.component';
+import { SettingsComponent } from './settings/settings.component';
 
 @NgModule({
   imports: [BrowserModule,
@@ -17,7 +18,7 @@ import {ContactListComponent} from './contact-list/contact-list.component';
     RouterModule.forRoot(AppRoutes)
   ],
   exports: [],
-  declarations: [AppComponent, ContactListComponent, ContactDetailComponent],
+  declarations: [AppComponent, ContactListComponent, ContactDetailComponent, SettingsComponent],
   bootstrap: [AppComponent],
   providers: [
     ContactService,

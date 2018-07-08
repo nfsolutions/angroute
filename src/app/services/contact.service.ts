@@ -16,7 +16,7 @@ export class ContactService {
       setTimeout(() => {
         observer.next(contacts);
         observer.complete();
-      }, 2000);
+      }, 5000);
     });
   }
 
@@ -25,7 +25,7 @@ export class ContactService {
       setTimeout(() => {
         observer.next(contacts.find((contact) => contact.id == id));
         observer.complete();
-      }, 2000);
+      }, 5000);
     });
   }
 }
